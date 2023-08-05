@@ -2,7 +2,7 @@
 
 # Here is Deploy Link - 
 
- main page - https://tejbari5.github.io/Frontend-1-Contest-2-July/
+ main page - https://tejbari5.github.io/Frontend-1-Module-Test-July/
 
 # Project Overview -
 
