@@ -1,0 +1,17 @@
+<svg width="83" height="13" viewBox="0 0 83 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Rating" clip-path="url(#clip0_10_438)">
+<rect width="82.1053" height="12.1893" transform="translate(0 0.547607)" fill="white"/>
+<g id="Group 3">
+<path id="Star" fill-rule="evenodd" clip-rule="evenodd" d="M6.31579 9.08013L2.60346 11.573L3.91312 7.39561L0.309117 4.75892L4.83086 4.67L6.31579 0.547607L7.80072 4.67L12.3225 4.75892L8.71846 7.39561L10.0281 11.573L6.31579 9.08013Z" fill="#FF5E3A"/>
+<path id="Star_2" fill-rule="evenodd" clip-rule="evenodd" d="M24 9.08013L20.2877 11.573L21.5973 7.39561L17.9933 4.75892L22.5151 4.67L24 0.547607L25.4849 4.67L30.0067 4.75892L26.4027 7.39561L27.7123 11.573L24 9.08013Z" fill="#FF5E3A"/>
+<path id="Star_3" fill-rule="evenodd" clip-rule="evenodd" d="M41.6842 9.08013L37.9719 11.573L39.2815 7.39561L35.6775 4.75892L40.1993 4.67L41.6842 0.547607L43.1691 4.67L47.6909 4.75892L44.0869 7.39561L45.3965 11.573L41.6842 9.08013Z" fill="#FF5E3A"/>
+<path id="Star_4" fill-rule="evenodd" clip-rule="evenodd" d="M59.3684 9.08013L55.6561 11.573L56.9657 7.39561L53.3617 4.75892L57.8835 4.67L59.3684 0.547607L60.8533 4.67L65.3751 4.75892L61.7711 7.39561L63.0807 11.573L59.3684 9.08013Z" fill="#FF5E3A"/>
+<path id="Star_5" fill-rule="evenodd" clip-rule="evenodd" d="M75.7895 9.08013L72.0771 11.573L73.3868 7.39561L69.7828 4.75892L74.3045 4.67L75.7895 0.547607L77.2744 4.67L81.7961 4.75892L78.1921 7.39561L79.5018 11.573L75.7895 9.08013Z" fill="#FF5E3A"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_10_438">
+<rect width="82.1053" height="12.1893" fill="white" transform="translate(0 0.547607)"/>
+</clipPath>
+</defs>
+</svg>

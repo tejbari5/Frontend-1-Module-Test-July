@@ -4,421 +4,667 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Made by Tej Bari">
     <title>Frontend-1-Module-Test-July</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/Standard Collection 27.svg" type="image/x-icon">
+    <!-- Css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-md navbar-light mx-auto ">
-        <a class="navbar-brand" id="show" href="#"><img src="./E-Commerce2/Logo.svg" alt="BrandLogo"></a>
-        <a class="navbar-brand" id="none" href="#"><img src="./E-Commerce2/btlogo.svg" alt="BrandLogo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="main-component">
+        <!-- Header -->
+        <div class="header-component">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container d-flex justify-content-around">
+                    <a class="navbar-brand logo" href="#">
+                        <img src="./assets/Logo.svg" alt="" width="160px" height="40px" class="d-inline-block">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse center-nav" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Lookups</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex right-nav">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31"
+                                    viewBox="0 0 30 31" fill="none">
+                                    <rect y="0.967926" width="30" height="29.8076" fill="#F4F4F4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.9813 20.1513C14.6685 22.7876 9.81921 22.5801 6.74823 19.5288C3.45318 16.2549 3.45318 10.9468 6.74823 7.67291C10.0433 4.39899 15.3856 4.39899 18.6807 7.67291C21.7516 10.7242 21.9605 15.5424 19.3072 18.834L25.7517 25.2372C26.1178 25.6009 26.1178 26.1907 25.7517 26.5545C25.3856 26.9183 24.792 26.9183 24.4259 26.5545L17.9813 20.1513ZM8.07406 18.2115C5.51124 15.6651 5.51124 11.5366 8.07406 8.99023C10.6369 6.44385 14.792 6.44385 17.3548 8.99023C19.9158 11.5347 19.9176 15.659 17.3605 18.2059C17.3586 18.2077 17.3567 18.2096 17.3548 18.2115C17.3529 18.2133 17.3511 18.2152 17.3492 18.2171C14.7859 20.7579 10.635 20.756 8.07406 18.2115Z"
+                                        fill="#4F5665" />
+                                </svg>
+                            </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Lookups</a>
-                </li>
-            </ul>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31"
+                                    viewBox="0 0 30 31" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.6875 10.2892C9.6875 7.37401 12.066 5.01077 15 5.01077C17.934 5.01077 20.3125 7.37401 20.3125 10.2892C20.3125 13.2044 17.934 15.5676 15 15.5676C12.066 15.5676 9.6875 13.2044 9.6875 10.2892ZM15 6.87375C13.1015 6.87375 11.5625 8.4029 11.5625 10.2892C11.5625 12.1755 13.1015 13.7047 15 13.7047C16.8985 13.7047 18.4375 12.1755 18.4375 10.2892C18.4375 8.4029 16.8985 6.87375 15 6.87375Z"
+                                        fill="#4F5665" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 19.2936C8.4467 19.2936 7.1875 20.5447 7.1875 22.0881V23.5639C7.1875 23.5864 7.20389 23.6055 7.22621 23.6091C12.3747 24.4443 17.6253 24.4443 22.7738 23.6091C22.7961 23.6055 22.8125 23.5864 22.8125 23.5639V22.0881C22.8125 20.5447 21.5533 19.2936 20 19.2936H19.5739C19.541 19.2936 19.5082 19.2988 19.4769 19.3089L18.395 19.6599C16.189 20.3757 13.811 20.3757 11.605 19.6599L10.5231 19.3089C10.4918 19.2988 10.459 19.2936 10.4261 19.2936H10ZM5.3125 22.0881C5.3125 19.5158 7.41116 17.4306 10 17.4306H10.4261C10.6567 17.4306 10.8859 17.4668 11.1051 17.538L12.187 17.889C14.0148 18.482 15.9852 18.482 17.813 17.889L18.8949 17.538C19.1141 17.4668 19.3433 17.4306 19.5739 17.4306H20C22.5888 17.4306 24.6875 19.5158 24.6875 22.0881V23.5639C24.6875 24.4994 24.0051 25.297 23.0759 25.4478C17.7274 26.3154 12.2726 26.3154 6.92409 25.4478C5.99485 25.297 5.3125 24.4994 5.3125 23.5639V22.0881Z"
+                                        fill="#4F5665" />
+                                </svg>
+                            </a>
+
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="31"
+                                    viewBox="0 0 33 31" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.25 7.7003C22.25 7.01437 21.6903 6.45831 21 6.45831C20.3096 6.45831 19.75 7.01437 19.75 7.7003V8.63179H19.0532C16.2719 8.63179 13.9699 10.7804 13.7963 13.5385L13.52 17.927C13.4147 19.6002 12.8493 21.2127 11.8855 22.5887C11.0146 23.832 11.7899 25.5491 13.3036 25.7296L17.5625 26.2374V27.572C17.5625 29.4584 19.1015 30.9875 21 30.9875C22.8985 30.9875 24.4375 29.4584 24.4375 27.572V26.2374L28.6964 25.7296C30.2101 25.5491 30.9853 23.832 30.1145 22.5887C29.1506 21.2127 28.5853 19.6002 28.48 17.927L28.2037 13.5385C28.0301 10.7804 25.7281 8.63179 22.9467 8.63179H22.25V7.7003ZM19.0532 10.4948C17.262 10.4948 15.7794 11.8785 15.6676 13.6548L15.3913 18.0433C15.2646 20.0568 14.5843 21.997 13.4245 23.6529C13.3615 23.7427 13.4176 23.8668 13.527 23.8799L18.199 24.4369C20.0597 24.6588 21.9403 24.6588 23.8009 24.4369L28.473 23.8799C28.5824 23.8668 28.6384 23.7427 28.5755 23.6529C27.4157 21.997 26.7354 20.0568 26.6086 18.0433L26.3324 13.6548C26.2205 11.8785 24.738 10.4948 22.9467 10.4948H19.0532ZM21 29.1245C20.137 29.1245 19.4375 28.4295 19.4375 27.572V26.6406H22.5625V27.572C22.5625 28.4295 21.8629 29.1245 21 29.1245Z"
+                                        fill="#4F5665" />
+                                    <circle cx="28" cy="11" r="4.75" fill="#FF5E3A" stroke="#4F5665"
+                                        stroke-width="0.5" />
+                                </svg>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
-                <rect y="0.967926" width="30" height="29.8076" fill="#F4F4F4" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M17.9813 20.1513C14.6685 22.7876 9.81921 22.5801 6.74823 19.5288C3.45318 16.2549 3.45318 10.9468 6.74823 7.67291C10.0433 4.39899 15.3856 4.39899 18.6807 7.67291C21.7516 10.7242 21.9605 15.5424 19.3072 18.834L25.7517 25.2372C26.1178 25.6009 26.1178 26.1907 25.7517 26.5545C25.3856 26.9183 24.792 26.9183 24.4259 26.5545L17.9813 20.1513ZM8.07406 18.2115C5.51124 15.6651 5.51124 11.5366 8.07406 8.99023C10.6369 6.44385 14.792 6.44385 17.3548 8.99023C19.9158 11.5347 19.9176 15.659 17.3605 18.2059C17.3586 18.2077 17.3567 18.2096 17.3548 18.2115C17.3529 18.2133 17.3511 18.2152 17.3492 18.2171C14.7859 20.7579 10.635 20.756 8.07406 18.2115Z"
-                    fill="#4F5665" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.6875 10.2892C9.6875 7.37401 12.066 5.01077 15 5.01077C17.934 5.01077 20.3125 7.37401 20.3125 10.2892C20.3125 13.2044 17.934 15.5676 15 15.5676C12.066 15.5676 9.6875 13.2044 9.6875 10.2892ZM15 6.87375C13.1015 6.87375 11.5625 8.4029 11.5625 10.2892C11.5625 12.1755 13.1015 13.7047 15 13.7047C16.8985 13.7047 18.4375 12.1755 18.4375 10.2892C18.4375 8.4029 16.8985 6.87375 15 6.87375Z"
-                    fill="#4F5665" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M10 19.2936C8.4467 19.2936 7.1875 20.5447 7.1875 22.0881V23.5639C7.1875 23.5864 7.20389 23.6055 7.22621 23.6091C12.3747 24.4443 17.6253 24.4443 22.7738 23.6091C22.7961 23.6055 22.8125 23.5864 22.8125 23.5639V22.0881C22.8125 20.5447 21.5533 19.2936 20 19.2936H19.5739C19.541 19.2936 19.5082 19.2988 19.4769 19.3089L18.395 19.6599C16.189 20.3757 13.811 20.3757 11.605 19.6599L10.5231 19.3089C10.4918 19.2988 10.459 19.2936 10.4261 19.2936H10ZM5.3125 22.0881C5.3125 19.5158 7.41116 17.4306 10 17.4306H10.4261C10.6567 17.4306 10.8859 17.4668 11.1051 17.538L12.187 17.889C14.0148 18.482 15.9852 18.482 17.813 17.889L18.8949 17.538C19.1141 17.4668 19.3433 17.4306 19.5739 17.4306H20C22.5888 17.4306 24.6875 19.5158 24.6875 22.0881V23.5639C24.6875 24.4994 24.0051 25.297 23.0759 25.4478C17.7274 26.3154 12.2726 26.3154 6.92409 25.4478C5.99485 25.297 5.3125 24.4994 5.3125 23.5639V22.0881Z"
-                    fill="#4F5665" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="31" viewBox="0 0 33 31" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M22.25 7.7003C22.25 7.01437 21.6903 6.45831 21 6.45831C20.3096 6.45831 19.75 7.01437 19.75 7.7003V8.63179H19.0532C16.2719 8.63179 13.9699 10.7804 13.7963 13.5385L13.52 17.927C13.4147 19.6002 12.8493 21.2127 11.8855 22.5887C11.0146 23.832 11.7899 25.5491 13.3036 25.7296L17.5625 26.2374V27.572C17.5625 29.4584 19.1015 30.9875 21 30.9875C22.8985 30.9875 24.4375 29.4584 24.4375 27.572V26.2374L28.6964 25.7296C30.2101 25.5491 30.9853 23.832 30.1145 22.5887C29.1506 21.2127 28.5853 19.6002 28.48 17.927L28.2037 13.5385C28.0301 10.7804 25.7281 8.63179 22.9467 8.63179H22.25V7.7003ZM19.0532 10.4948C17.262 10.4948 15.7794 11.8785 15.6676 13.6548L15.3913 18.0433C15.2646 20.0568 14.5843 21.997 13.4245 23.6529C13.3615 23.7427 13.4176 23.8668 13.527 23.8799L18.199 24.4369C20.0597 24.6588 21.9403 24.6588 23.8009 24.4369L28.473 23.8799C28.5824 23.8668 28.6384 23.7427 28.5755 23.6529C27.4157 21.997 26.7354 20.0568 26.6086 18.0433L26.3324 13.6548C26.2205 11.8785 24.738 10.4948 22.9467 10.4948H19.0532ZM21 29.1245C20.137 29.1245 19.4375 28.4295 19.4375 27.572V26.6406H22.5625V27.572C22.5625 28.4295 21.8629 29.1245 21 29.1245Z"
-                    fill="#4F5665" />
-                <circle cx="28" cy="11" r="4.75" fill="#FF5E3A" stroke="#4F5665" stroke-width="0.5" />
-            </svg>
+         <!-- -----------------------------Hero-section----------------- -->
+         <section class="hero-sec container p-0 d-flex  flex-wrap justify-content-between align-items-center">
+            <div class="left-sec">
+                <div class="hero-text d-flex flex-column">
+                    <p>Limited Time Only For Winter</p>
+                    <h1>fashion</h1>
+                    <h4>LOOK YOUR BEST ON YOUR BEST DAY</h4>
+                </div>
+                <button class="hero-btn">Explore Now!</button>
+            </div>
+            <div class="right-img-sec">
+                <img src="./assets/hero.png" alt="pic">
+            </div>
+
+        </section>
+        <!-- <div class="hero-component">
+            <div class="hero-left">
+                <h6>Limited Time Only For Winter</h6>
+                <h1>fashion</h1>
+                <h5>LOOK YOUR BEST ON YOUR BEST DAY</h5>
+                <button type="button">Explore Now!</button>
+            </div>
+            <div class="hero-right">
+                <img src="./assets/hero.png" alt="hero image" role="img" aria-hidden="true" />
+            </div>
+        </div> -->
+
+        <!-- ------------------collectionn-sction----------- -->
+        <section class="collection-sec container" id="our-coll-secc">
+            <p class="m-0">COLLECTION</p>
+            <img id="exclude-icon" src="./Assets/Exclude.svg" alt="icon">
+            <h3>Our Top Collection</h3>
+            <div class="buttons d-flex flex-wrap justify-content-center align-items-center">
+                <button>Jewellery</button>
+                <button>Accessories</button>
+                <button>Dresses</button>
+                <button>Footwear</button>
+            </div>
+            <div class="collection-cards d-flex flex-wrap justify-content-center  align-items-center">
+                                
+                <div class="my-card m-4">
+                    <div class="card-top">
+                        <img src="./assets/hoodie.png" class="mt-5" width="214px" height="219px" class="card-img-top" alt="img">
+                    </div>
+                    <div class="card-bottom p-3 mx-2">
+                        <p>Nike Men’s -  Imported 
+                            Hoodie Red</p>
+                        <div class="d-flex justify-content-between">
+                            <button>$150</button>
+                            <img src="./assets/Rating.svg" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-card m-4">
+                    <div class="card-top">
+                        <img src="./assets/gratis.png" class="mt-5" width="214px" height="219px" class="card-img-top" alt="img">
+                    </div>
+                    <div class="card-bottom p-3 mx-2">
+                        <p>Armani Frok Ladies -  Imported 
+                            Fork Blue</p>
+                        <div class="d-flex justify-content-between">
+                            <button>$250</button>
+                            <img src="./assets/Rating (1).svg" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-card m-4">
+                    <div class="card-top">
+                        <img src="./assets/apple-watch.png" class="mt-5" width="214px" height="219px" class="card-img-top" alt="img">
+                    </div>
+                    <div class="card-bottom p-3 mx-2">
+                        <p>Armani Frok Ladies -  Imported 
+                            Fork Blue</p>
+                        <div class="d-flex justify-content-between">
+                            <button>$250</button>
+                            <img src="./assets/Rating (2).svg" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- <div class="collection-component">
+            <div class="heading">
+                <h5>COLLECTION</h5>
+            </div>
+            <div class="heading-line">
+                <img src="./assets/Exclude.svg" alt="">
+            </div>
+            <div class="heading-2">
+                <h2>Our Top Collection</h2>
+            </div>
+            <div class="buttons">
+                <button type="button" class="btns">Jewellery</button>
+                <button type="button" class="btns">Accessories</button>
+                <button type="button" class="btns">Dresses</button>
+                <button type="button" class="btns">Footwear</button>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/hoodie.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="content">
+                        <p class="title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="footer">
+                            <div class="desc">
+                                <p>$150</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/gratis.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="content">
+                        <p class="title">
+                            Armani Frok Ladies - Imported Fork Blue
+                        </p>
+                        <div class="footer">
+                            <div class="desc">
+                                <p>$250</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating (1).svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/apple-watch.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="content">
+                        <p class="title">
+                            Apple Watch Series 6 - Sliver Band
+                        </p>
+                        <div class="footer">
+                            <div class="desc">
+                                <p>$450</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating (2).svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- ------------------------------Latest-collection-section------------ -->
+        <section class="Latest-collection-sec container" id="our-latest-coll">
+            <p class="m-0">New Arrival</p>
+            <img id="exclude-icon" src="./assets/Exclude.svg" alt="icon">
+            <h3>Latest Collection</h3>
+            <div class="grid-latest-collection">
+                <div class="grid-item A">
+                    <img src="./assets/Poster1.png" alt="pic">
+                </div>
+                <div class="grid-item B">
+                    <img src="./assets/Poster3.png" alt="pic">
+                </div>
+                <div class="grid-item C">
+                    <img src="./assets/Poster2.png" alt="pic">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <div class="new-arrival-component">
+            <div class="heading">
+                <h5>New Arrival</h5>
+            </div>
+            <div class="heading-line">
+                <img src="./assets/Exclude.svg" alt="">
+            </div>
+            <div class="heading-2">
+                <h2>Latest Collection</h2>
+            </div>
+            <div class="grid-img">
+                <div class="poster1">
+                    <img src="./assets/Poster1.png" alt="">
+                    <p>2021 Trends Women's Smart Skirt</p>
+                </div>
+                <div class="poster3">
+                    <img src="./assets/Poster3.png" alt="">
+                    <p>2021 Trends Women's Smart Shirt <br><br>Discover More:</p>
+                </div>
+                <div class="poster2">
+                    <img src="./assets/Poster2.png" alt="">
+                    <p>2021 Trends Women's Smart Skirt</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="categories-component">
+            <div class="heading">
+                <h5>CATEGORIES</h5>
+            </div>
+            <div class="heading-line">
+                <img src="./assets/Exclude.svg" alt="">
+            </div>
+            <div class="heading-2">
+                <h2>2021 Latest Collection</h2>
+            </div>
+
+            <div class="cards-2">
+                <div class="gray-card">
+                    <div class="gray-image">
+                        <img src="./assets/hoodie.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="gray-content">
+                        <p class="gray-title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="gray-footer">
+                            <div class="gray-desc">
+                                <p>$150</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gray-card">
+                    <div class="gray-image">
+                        <img src="./assets/Pngtree1.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="gray-content">
+                        <p class="gray-title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="gray-footer">
+                            <div class="gray-desc">
+                                <p>$80</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gray-card">
+                    <div class="gray-image">
+                        <img src="./assets/Pngtree2.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="gray-content">
+                        <p class="gray-title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="gray-footer">
+                            <div class="gray-desc">
+                                <p>$150</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gray-card">
+                    <div class="gray-image">
+                        <img src="./assets/apple-watch.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="gray-content">
+                        <p class="gray-title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="gray-footer">
+                            <div class="gray-desc">
+                                <p>$150</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gray-card">
+                    <div class="gray-image">
+                        <img src="./assets/headphones.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="gray-content">
+                        <p class="gray-title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="gray-footer">
+                            <div class="gray-desc">
+                                <p>$150</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gray-card">
+                    <div class="gray-image">
+                        <img src="./assets/Pngtree.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="gray-content">
+                        <p class="gray-title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="gray-footer">
+                            <div class="gray-desc">
+                                <p>$150</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gray-card">
+                    <div class="gray-image">
+                        <img src="./assets/football-boot.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="gray-content">
+                        <p class="gray-title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="gray-footer">
+                            <div class="gray-desc">
+                                <p>$150</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gray-card">
+                    <div class="gray-image">
+                        <img src="./assets/HTB.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="gray-content">
+                        <p class="gray-title">
+                            Nike Air Men's Hoodie - Imported Hoodie Red
+                        </p>
+                        <div class="gray-footer">
+                            <div class="gray-desc">
+                                <p>$150</p>
+                            </div>
+                            <div class="star">
+                                <img src="./assets/Rating.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+        <!-- ------------------2021-collection----------------- -->
+        <section class="collection-sec-2021 container" id="our-latest-col-2021">
+            <p class="m-0">CATEGORIES</p>
+            <img id="exclude-icon" src="./assets/Exclude.svg" alt="icon">
+            <h3>2021 Latest Collection</h3>
+
+
+            <div class="collection-cards-2021 mt-5 d-flex justify-content-center align-items-center flex-wrap">
+
+                <div class="card-collection-2021">
+                    <div class="card-coll-2021-top">
+                        <img src="./assets/hoodie.png" class="mt-5" width="180px" height="150px" alt="img">
+                    </div>
+                    <div class="card-coll-2021-bottom">
+                        <div class="product-name m-0">
+                            <p>Nike Air Men’s Hoodie -  
+                            Imported Hoodie</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                             <a href="#"><p  class="m-0">$150</p></a>
+                            <img src="./assets/Rating.svg" width="82px" height="18px" alt="rating">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-collection-2021">
+                    <div class="card-coll-2021-top fav-card">
+                        <img src="./assets/Pngtree1.png" class="mt-5" width="180px" height="150px" alt="img">
+                    </div>
+                    <div class="card-coll-2021-bottom">
+                        <div class="product-name fav-cart d-flex justify-content-between align-items-center">
+                            <p>Nike Air Men’s Hoodie -  
+                                Imported Hoodie</p>
+                            <button class>Add to Cart</button>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                             <a href="#"><p  class="m-0">$80</p></a>
+                            <img src="./assets/Rating.svg" width="82px" height="18px" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-collection-2021">
+                    <div class="card-coll-2021-top">
+                        <img src="./assets/Pngtree2.png" class="mt-5" width="180px" height="150px" alt="img">
+                    </div>
+                    <div class="card-coll-2021-bottom">
+                        <div class="product-name">
+                            <p>Nike Air Men’s Hoodie -  
+                            Imported Hoodie</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                             <a href="#"><p  class="m-0">$150</p></a>
+                            <img src="./assets/Rating.svg" width="82px" height="18px" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-collection-2021">
+                    <div class="card-coll-2021-top">
+                        <img src="./assets/apple-watch.png" class="mt-5" width="180px" height="150px" alt="img">
+                    </div>
+                    <div class="card-coll-2021-bottom">
+                        <div class="product-name">
+                            <p>Nike Air Men’s Hoodie -  
+                            Imported Hoodie</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                             <a href="#"><p  class="m-0">$150</p></a>
+                            <img src="./assets/Rating.svg" width="82px" height="18px" alt="rating">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-collection-2021">
+                    <div class="card-coll-2021-top">
+                        <img src="./assets/headphones.png" class="mt-5" width="180px" height="150px" alt="img">
+                    </div>
+                    <div class="card-coll-2021-bottom">
+                        <div class="product-name">
+                            <p>Nike Air Men’s Hoodie -  
+                            Imported Hoodie</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                             <a href="#"><p  class="m-0">$150</p></a>
+                            <img src="./assets/Rating.svg" width="82px" height="18px" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-collection-2021">
+                    <div class="card-coll-2021-top">
+                        <img src="./assets/Pngtree.png" class="mt-5" width="180px" height="150px" alt="img">
+                    </div>
+                    <div class="card-coll-2021-bottom">
+                        <div class="product-name">
+                            <p>Nike Air Men’s Hoodie -  
+                            Imported Hoodie</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                             <a href="#"><p  class="m-0">$150</p></a>
+                            <img src="./assets/Rating.svg" width="82px" height="18px" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-collection-2021">
+                    <div class="card-coll-2021-top">
+                        <img src="./assets/football-boot.png" class="mt-5" width="180px" height="150px" alt="img">
+                    </div>
+                    <div class="card-coll-2021-bottom">
+                        <div class="product-name">
+                            <p>Nike Air Men’s Hoodie -  
+                            Imported Hoodie</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                             <a href="#"><p  class="m-0">$150</p></a>
+                            <img src="./assets/Rating.svg" width="82px" height="18px" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-collection-2021">
+                    <div class="card-coll-2021-top">
+                        <img src="./assets/HTB.png" class="mt-5" width="180px" height="150px" alt="img">
+                    </div>
+                    <div class="card-coll-2021-bottom">
+                        <div class="product-name">
+                            <p>Nike Air Men’s Hoodie -  
+                            Imported Hoodie</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                             <a href="#"><p  class="m-0">$150</p></a>
+                            <img src="./assets/Rating.svg" width="82px" height="18px" alt="rating">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="footer-component">
+            <footer class="my-footer d-flex flex-wrap justify-content-between" id="our-footer">
+
+                <div class="foot-col1 mx-2 pt-5">
+                    <img src="./assets/Logo.svg" width="180px" height="45px" alt="img">
+                    <p>Lorem ispum is a placeholder text
+                    </p>
+                    <p>commonly used as a free text.</p>
+                    <div class="social-icon">
+                        <img src="./assets/facebook-icon.svg" alt="icon">
+                        <img src="./assets/twitter-logo.svg" alt="icon">
+                        <img src="./assets/insta-logo.svg" alt="icon">
+                        <img src="./assets/youtube-logo.svg" alt="icon">
+
+                    </div>
+                    <p class="copyright-text">Copyrights 2021</p>
+                    <p class="copyright-text">@Iamabdulqadeer01</p>
+                </div>
+
+                <div class="foot-col2 mx-2 pt-5">
+                    <h5 class="foot-heading">Product</h5>
+                    <p>Download</p>
+                    <p>Price</p>
+                    <p>Location</p>
+                    <p>Server</p>
+                    <p>Countries</p>
+
+                </div>
+
+                <div class="foot-col3 mx-2 pt-5">
+                    <h5 class="foot-heading">Category</h5>
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Kids</p>
+                    <p>Best Seller</p>
+                    <p>New Arrivals</p>
+
+                </div>
+
+                <div class="foot-col4 mx-2 pt-5">
+                    <h5 class="foot-heading">My Account</h5>
+                    <p>My Account</p>
+                    <p>Discount</p>
+                    <p>Returns</p>
+                    <p>Order History</p>
+                    <p>Order Tracking</p>
+
+                </div>
+
+                <div class="foot-col5 mx-2 pt-5">
+                    <h5 class="foot-heading">Contact Us</h5>
+                    <div class="d-flex">
+                        <img src="./assets/address.svg" alt="icon">
+                        <h6>123 Street Trafford, London, UK</h6>
+                    </div>
+                    <div class="d-flex">
+                        <img class="envelope" src="./assets/Envelope.svg" width="20px" height="20px" alt="icon">
+                        <h6>info@sitename.com</h6>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./assets/phone-icon.svg" alt="icon">
+                        <h6>+456 789 789 001</h6>
+                    </div>
+
+                </div>
+            </footer>
         </div>
-    </nav>
-    <main>
-        <section class="container w-100">
-            <div class="hero mx-auto">
-                <div class="heroleft">
-                    <div class="herotext">
-                        <p><strong>Limited Time Only For Winter</strong></p>
-                        <img src="./E-Commerce2/fashion.png" alt="Fashion">
-                        <p><strong>LOOK YOUR BEST ON YOUR BEST DAY</strong></p>
-                    </div>
-                    <div class="btndiv mt-5">
-                        <button type="button" class="btn2">Explore Now!</button>
-                    </div>
-                </div>
-                <div class="heroright">
-                    <img src="./E-Commerce2/Poster Picture.png" alt="poster picture">
-                </div>
-            </div>
-        </section>
-        <section class="container w-100 mt-5">
-            <div class="collection align-content-center">
-                <div class="align-text-center">COLLECTION</div>
-                <img src="./E-Commerce2/Exclude.svg" alt="bottom-border">
-                <h5 class="mt-3"><strong>Our Top Collections</strong></h5>
-            </div>
-            <div class="collection-btns mx-auto mt-5">
-                <button class="my-btn">Jewellery</button>
-                <button class="my-btn btn3">Accessories</button>
-                <button class="my-btn">Dresses</button>
-                <button class="my-btn">Footwear</button>
-            </div>
-            <div class="card-div mt-5 d-flex justify-content-between flex-wrap">
-                <div class="card my-card1" style="width: 18rem;">
-                    <div class="image">
-                        <img src="..." class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"><strong>Nike Air Men’s Hoodie - Imported
-                                Hoodie Red </strong></p>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card1" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/frok.png" class="card-img-top" alt="...">
-                        <img id="favicon" src="./E-Commerce2/Favorties Icon.svg" alt="Favorties">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"><strong>Nike Air Men’s Hoodie - Imported
-                                Hoodie Red </strong></p>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card1" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/watch.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"><strong>Nike Air Men’s Hoodie - Imported
-                                Hoodie Red </strong></p>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container w-100 mt-5">
-            <div class="collection align-content-center">
-                <div class="align-text-center">New Arrivals</div>
-                <img src="./E-Commerce2/Exclude.svg" alt="bottom-border">
-                <h5 class="mt-3"><strong>Latest Collections</strong></h5>
-            </div>
-            <div class="arrival d-flex mt-5">
-                <div class="left d-flex flex-column">
-                    <div class="image1">
-                        <img src="./E-Commerce2/left-1-arrival.png" alt="Trend">
-                    </div>
-                    <div class="image1">
-                        <img src="./E-Commerce2/left-1-arrival.png" alt="Trend">
-                    </div>
-                </div>
-                <div class="right">
-                    <img class="w-100" src="./E-Commerce2/right-arrival.png" alt="Trend">
-                </div>
-            </div>
-        </section>
-        <section class="container w-100 mt-5">
-            <div class="collection align-content-center">
-                <div class="align-text-center">CATEGORIES</div>
-                <img src="./E-Commerce2/Exclude.svg" alt="bottom-border">
-                <h5 class="mt-3"><strong>2021 Latest Collections</strong></h5>
-            </div>
-            <div class="card-div mt-5 d-flex justify-content-between flex-wrap px-auto">
-                <div class="card my-card2" style="width: 18rem;">
-                    <div class="image">
-                        <img src="..." class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <div class="my-card-title d-flex align-content-center">
-                            <p class="card-text2"><strong>Nike Air Men’s Hoodie - Imported Hoodie Red </strong></p>
-                        </div>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs2">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card2" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/2.png" class="card-img-top" alt="Picture">
-                        <img id="favicon2" src="./E-Commerce2/Favorties Icon.svg" alt="Favorties">
-                    </div>
-                    <div class="card-body">
-                        <div class="my-card-title d-flex align-content-center">
-                            <p class="card-text2"><strong>Nike Air Men’s Hoodie - Imported Hoodie Red </strong></p>
-                            <a href="#"><button class="btn-rs rs-text text-align-center">ADD TO CART</button></a>
-                        </div>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs2">$80</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card2" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/3.png" class="card-img-top" alt="Picture">
-                    </div>
-                    <div class="card-body">
-                        <div class="my-card-title d-flex align-content-center">
-                            <p class="card-text2"><strong>Nike Air Men’s Hoodie - Imported Hoodie Red </strong></p>
-                        </div>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs2">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card2" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/4.png" class="card-img-top" alt="Picture">
-                    </div>
-                    <div class="card-body">
-                        <div class="my-card-title d-flex align-content-center">
-                            <p class="card-text2"><strong>Nike Air Men’s Hoodie - Imported Hoodie Red </strong></p>
-                        </div>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs2">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card2" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/5.png" class="card-img-top" alt="Picture">
-                    </div>
-                    <div class="card-body">
-                        <div class="my-card-title d-flex align-content-center">
-                            <p class="card-text2"><strong>Nike Air Men’s Hoodie - Imported Hoodie Red </strong></p>
-                        </div>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs2">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card2" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/6.png" class="card-img-top" alt="Picture">
-                    </div>
-                    <div class="card-body">
-                        <div class="my-card-title d-flex align-content-center">
-                            <p class="card-text2"><strong>Nike Air Men’s Hoodie - Imported Hoodie Red </strong></p>
-                        </div>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs2">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card2" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/7.png" class="card-img-top" alt="Picture">
-                    </div>
-                    <div class="card-body">
-                        <div class="my-card-title d-flex align-content-center">
-                            <p class="card-text2"><strong>Nike Air Men’s Hoodie - Imported Hoodie Red </strong></p>
-                        </div>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs2">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="card my-card2" style="width: 18rem;">
-                    <div class="image">
-                        <img src="./E-Commerce2/8.png" class="card-img-top" alt="Picture">
-                    </div>
-                    <div class="card-body">
-                        <div class="my-card-title d-flex align-content-center">
-                            <p class="card-text2"><strong>Nike Air Men’s Hoodie - Imported Hoodie Red </strong></p>
-                        </div>
-                        <div class="row-3 d-flex justify-content-between">
-                            <a href="#" class="btn-rs2">$150</a>
-                            <img src="./E-Commerce2/Rating.svg" alt="Rating">
-                        </div>
-                    </div>
-                </div>   
-            </div>
-        </section>
-        <!-- footer area -->
-        <section class="color w-100">
-                <div class="my-footer d-flex mx-auto w-100">
-                    <div class="mycol1 d-flex flex-column">
-                        <div class="btlogo d-flex">
-                            <img src="./E-Commerce2/btlogo.svg" alt="Logo">
-                            <p class="brandName">Codevo</p>
-                        </div>
-                        <p id="bttext">Lorem ispum is a placeholder text 
-                            commonly used as a free text.</p>
-                        <div class="socials">
-                            <img src="./E-Commerce2/Social Media Buttons.svg" alt="">
-                        </div>
-                        <p id="bttext2">Copyrights 2021
-                            @Iamabdulqadeer01</p>
-                    </div>
-                    <div class="mycol-right d-flex ">
-                        <div class="mycol2">
-                            <table class="table-1">
-                                <thead>
-                                    <th>Product</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Download</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pricing</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Location</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Server</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Coutries</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="mycol2">
-                            <table class="table-1">
-                                <thead>
-                                    <th>Category</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Men</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Women</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kids</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Best Sellers</td>
-                                    </tr>
-                                    <tr>
-                                        <td>New Arrivals</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="mycol2">
-                            <table class="table-1">
-                                <thead>
-                                    <th>My Account</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>My Account</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Discount</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Returns</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Order History</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Order Tracking</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="mycol2">
-                            <table class="table-1">
-                                <thead>
-                                    <th>Contact Us</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="cell d-flex">
-                                            <div class="conlogo">
-                                                    <img src="./E-Commerce2/Location.png" alt="location">
-                                                </div>
-                                                <div class="condetails">
-                                                    123 Street Trafford, London, UK
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell d-flex">
-                                                <div class="conlogo">
-                                                    <img src="./E-Commerce2/Envelope.png" alt="mail">
-                                                </div>
-                                                <div class="condetails">
-                                                    info@companyname.com
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell d-flex">
-                                            <div class="conlogo">
-                                                    <img src="./E-Commerce2/Phone.png" alt="phone">
-                                                </div>
-                                                <div class="condetails">
-                                                    +456 789 789 001
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-        </section> 
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
